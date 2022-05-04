@@ -77,6 +77,11 @@ public:
 		glDeleteShader(fragmentShader);
 	}
 
+	~Shader()
+	{
+		glDeleteProgram(ID);
+	}
+
 	//使用着色器
 	void use()
 	{

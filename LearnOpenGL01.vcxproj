@@ -79,8 +79,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>X:\OpenGL\ThirdParty\include;$(IncludePath)</IncludePath>
-    <LibraryPath>X:\OpenGL\ThirdParty\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>X:\OpenGL\LearnOpenGL\ThirdParty\include;$(IncludePath)</IncludePath>
+    <LibraryPath>X:\OpenGL\LearnOpenGL\ThirdParty\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -146,14 +146,26 @@
     <ClCompile Include="..\glad\src\glad.c" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="stb_image.cpp" />
     <ClCompile Include="Test01.cpp" />
     <ClCompile Include="Test02.cpp" />
+    <ClCompile Include="TestTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Program.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="stb_image.h" />
     <ClInclude Include="Test01.h" />
     <ClInclude Include="Test02.h" />
+    <ClInclude Include="TestTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TestTexturePixelShader.txt" />
+    <Text Include="TestTextureVertexShader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="awesomeface.png" />
+    <Image Include="container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

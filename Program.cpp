@@ -1,9 +1,9 @@
 #include "Program.h"
-#include "Test02.h"
-using namespace LearnTest02;
+#include "TestTexture.h"
+using namespace TestTextureWin;
 
 int main()
 {
-	Test02 test;
+	TestTexture test;
 	return test.CreateWindow();
 }
